@@ -1,0 +1,21 @@
+.error {
+  width: 100%;
+  height: 74vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  &__number {
+    font-family: Rubik;
+    font-weight: 700;
+    font-size: 126px;
+    color: #f37c71;
+  }
+  &__text {
+    font-family: Raleway;
+    font-weight: 600;
+    font-size: 24px;
+    line-height: 21px;
+    letter-spacing: 0.1em;
+  }
+}

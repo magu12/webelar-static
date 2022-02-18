@@ -1,0 +1,118 @@
+.portfolio {
+    margin-top: 80px;
+    width: 100%;
+    background: #F6FBFF;
+    padding: 80px 0;
+    .wrap {
+        position: relative;
+        .swiper-button-prev,
+        .swiper-rtl .swiper-button-next {
+            left: -60px;
+            right: auto;
+        }
+        .swiper-button-next,
+        .swiper-rtl .swiper-button-prev {
+            right: -60px;
+            left: auto;
+        }
+        .swiper-button-next,
+        .swiper-button-prev {
+            color: #F37C71;
+        }
+        .swiper-button-next::after,
+        .swiper-button-prev::after {
+            font-weight: bold;
+            font-size: 30px;
+        }
+    }
+    .sub-title {
+        font-family: Rubik;
+        font-style: normal;
+        font-weight: bold;
+        font-size: 36px;
+        line-height: 43px;
+        text-transform: uppercase;
+        color: #282e73;
+        text-align: center;
+    }
+    .name {
+        font-family: Rubik;
+        font-weight: bold;
+        font-size: 24px;
+        line-height: 28px;
+        color: #282e73;
+        margin-top: 55px;
+    }
+    &__items {
+        margin-top: 50px;
+        display: flex;
+        flex-wrap: wrap;
+    }
+    &__slider {
+        margin-top: 60px;
+        overflow: hidden;
+    }
+    &__item {
+        margin-bottom: 30px;
+        width: 23%;
+        margin-right: 20px;
+        height: 175px;
+        overflow: hidden;
+        border-radius: 5px;
+        position: relative;
+        filter: drop-shadow(0px 30px 30px rgba(128, 128, 128, 0.15));
+        transition: all 0.3s;
+        img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+        }
+        &:hover {
+            transform: scale(1.05);
+            .portfolio__info {
+                left: 0%;
+            }
+        }
+    }
+    &__info {
+        position: absolute;
+        width: 100%;
+        height: 100%;
+        top: 0px;
+        left: -100%;
+        background: #f8fafc;
+        padding: 12px 15px;
+        transition: all 0.3s ease-in-out;
+    }
+    &__name {
+        font-family: Raleway;
+        font-weight: bold;
+        font-size: 18px;
+        line-height: 21px;
+        color: #f37c71;
+    }
+    &__step {
+        margin-top: 7px;
+        font-family: Raleway;
+        font-style: normal;
+        font-weight: normal;
+        font-size: 16px;
+        line-height: 19px;
+        color: #000000;
+        width: 70%;
+    }
+    &__link {
+        display: block;
+        margin-top: 12px;
+        font-family: Raleway;
+        font-style: normal;
+        font-weight: bold;
+        font-size: 18px;
+        line-height: 21px;
+        text-decoration-line: underline;
+        color: #f37c71;
+        &:hover {
+            color: #282e73;
+        }
+    }
+}

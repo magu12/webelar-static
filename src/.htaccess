@@ -1,0 +1,6 @@
+<Files "telegram.php">
+    Order Deny,Allow
+    Allow from all
+</Files>
+
+ErrorDocument 404 /404.html

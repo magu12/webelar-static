@@ -1,0 +1,195 @@
+.info {
+  padding-top: 120px;
+  .title {
+    font-family: Rubik;
+    text-align: center;
+    font-weight: bold;
+    font-size: 36px;
+    line-height: 43px;
+    text-transform: uppercase;
+    color: #282e73;
+  }
+  .sub-title {
+    margin-top: 50px;
+    font-family: Rubik;
+    font-weight: 500;
+    font-size: 24px;
+    line-height: 28px;
+    text-transform: uppercase;
+    color: #282e73;
+  }
+  .text {
+    margin-top: 30px;
+    font-family: Raleway;
+    font-weight: normal;
+    font-size: 18px;
+    line-height: 21px;
+    color: #000000;
+    width: 75%;
+  }
+}
+.prices {
+  padding: 50px 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  transition: all 0.3s ease-in-out;
+  .table {
+    width: 100%;
+    background: #ffffff;
+    box-shadow: 0px 40px 50px rgba(221, 221, 221, 0.17);
+    &__header,
+    .row,
+    &__bottom {
+      display: flex;
+      justify-content: space-between;
+    }
+    &__header {
+      .cell {
+        text-align: center;
+        padding: 30px 0;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        &.site-name {
+          font-family: Rubik;
+          font-weight: bold;
+          font-size: 24px;
+          line-height: 28px;
+          text-align: center;
+          text-transform: uppercase;
+          color: #282e73;
+        }
+        &.package-name {
+          font-family: Rubik;
+          font-style: normal;
+          font-weight: bold;
+          font-size: 18px;
+          line-height: 21px;
+          text-align: center;
+          text-transform: uppercase;
+          color: #f37c71;
+        }
+        &:nth-child(1) {
+          background: #fff9f9;
+        }
+        &:nth-child(2) {
+          background: #fefff5;
+        }
+        &:nth-child(3) {
+          background: #fcf5e3;
+        }
+        &:nth-child(4) {
+          background: #ffeeee;
+        }
+      }
+    }
+    .cell {
+      width: 255px;
+      &:nth-child(1) {
+        width: 410px;
+      }
+    }
+    .row {
+      padding: 5px 0;
+      &:nth-child(2n) {
+        background: #f8fafc;
+      }
+      .cell {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        &:not(:nth-child(1)) {
+          font-family: Rubik;
+          font-weight: normal;
+          font-size: 18px;
+          line-height: 21px;
+          text-align: center;
+          color: #619a57;
+        }
+        &__arrow {
+          width: 20px;
+          height: 20px;
+          position: absolute;
+          &::before {
+            position: relative;
+            content: "";
+            display: block;
+            width: 8px;
+            height: 2px;
+            border-radius: 2px;
+            background: #619a57;
+            transform: rotate(55deg);
+            top: 50%;
+          }
+          &::after {
+            position: relative;
+            content: "";
+            display: block;
+            width: 15px;
+            height: 2px;
+            border-radius: 2px;
+            background: #619a57;
+            transform: rotate(-60deg);
+            top: 25%;
+            right: -2px;
+          }
+        }
+      }
+      &-name {
+        justify-content: left !important;
+        padding-left: 30px;
+        font-family: Raleway;
+        font-style: normal;
+        font-weight: 500;
+        font-size: 18px;
+      }
+    }
+    &__bottom {
+      .cell {
+        text-align: center;
+        height: 110px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        .price {
+          font-family: Rubik;
+          font-weight: bold;
+          font-size: 18px;
+          line-height: 21px;
+          text-align: center;
+          text-transform: uppercase;
+          color: #f37c71;
+          margin-bottom: 15px;
+        }
+        .btn {
+          width: 160px;
+          height: 36px;
+          font-weight: 600;
+          font-size: 16px;
+          line-height: 19px;
+        }
+        &:nth-child(1) {
+          background: #fff9f9;
+          font-family: Rubik;
+          font-weight: 500;
+          font-size: 24px;
+          line-height: 28px;
+          text-align: center;
+          text-transform: uppercase;
+          color: #282e73;
+        }
+        &:nth-child(2) {
+          background: #fefff5;
+        }
+        &:nth-child(3) {
+          background: #fcf5e3;
+        }
+        &:nth-child(4) {
+          background: #ffeeee;
+        }
+      }
+    }
+  }
+}

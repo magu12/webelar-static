@@ -1,0 +1,74 @@
+.main {
+    position: relative;
+    background: #f8fafc;
+    height: 100vh;
+    min-height: 800px;
+    padding-top: 275px;
+    &__left-img {
+        position: absolute;
+        left: 0;
+        top: 75px;
+        width: 10vw;
+    }
+    .wrap {
+        position: relative;
+    }
+    &__img {
+        z-index: 0;
+        position: absolute;
+        top: 30vh;
+        right: 15.5%;
+        transform: translate(50%, -50%);
+        height: 70vh;
+    }
+    &__title {
+        font-family: Rubik;
+        font-weight: 500;
+        font-size: 48px;
+        line-height: 57px;
+        text-transform: uppercase;
+        color: #282e73;
+    }
+    &__sub-title {
+        margin-top: 50px;
+        position: relative;
+        z-index: 2;
+    }
+    &__sub-title,
+    &__sub-title span,
+    &__sub-title .typed-cursor {
+        font-family: Raleway;
+        font-style: normal;
+        font-weight: normal;
+        font-size: 28px;
+        line-height: 33px;
+        color: #282e73;
+        .typed-cursor {
+            animation: blinking 1s infinite ease-in-out;
+        }
+    }
+    .btn {
+        margin-top: 60px;
+        width: 367px;
+        height: 63px;
+        background: #F37C71;
+        font-weight: 800;
+        font-size: 18px;
+        line-height: 21px;
+        letter-spacing: 0.05em;
+        text-transform: uppercase;
+        color: #FFFFFF;
+    }
+}
+
+@keyframes blinking {
+    0% {
+        opacity: 1;
+    }
+    50% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
+    }
+}

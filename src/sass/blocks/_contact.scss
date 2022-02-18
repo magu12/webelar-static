@@ -1,0 +1,115 @@
+.contact {
+    width: 100%;
+    position: relative;
+    margin-top: 120px;
+    padding-bottom: 130px;
+    &__bg-img {
+        position: absolute;
+        right: 35%;
+        top: 53%;
+        transform: translate(50%, -50%);
+    }
+    .title {
+        margin-top: 35px;
+        font-family: Raleway;
+        font-weight: bold;
+        font-size: 24px;
+        line-height: 28px;
+        color: #282e73;
+        text-transform: uppercase;
+    }
+    .time-work {
+        margin-top: 15px;
+        font-family: Raleway;
+        font-weight: 500;
+        font-size: 24px;
+        line-height: 28px;
+        color: #000000;
+    }
+    .sub-title {
+        font-family: Rubik;
+        font-weight: bold;
+        font-size: 36px;
+        line-height: 43px;
+        text-transform: uppercase;
+        color: #282e73;
+        text-align: center;
+    }
+    &__content {
+        margin-top: 100px;
+    }
+    .cont-mail {
+        display: block;
+        margin-top: 15px;
+        font-family: Raleway;
+        font-style: normal;
+        font-weight: bold;
+        font-size: 24px;
+        line-height: 28px;
+        letter-spacing: 0.1em;
+        color: #000000;
+    }
+    .phone {
+        display: block;
+        margin-top: 15px;
+        font-family: Rubik;
+        font-style: normal;
+        font-weight: 500;
+        font-size: 22px;
+        letter-spacing: 0.1em;
+        color: #000000;
+    }
+    .messengers {
+        margin-top: 15px;
+        margin-bottom: 40px;
+    }
+    .messenger {
+        margin-right: 15px;
+        transition: all 0.3s ease-in-out;
+        &.mail:hover {
+            filter: drop-shadow(0px 0px 30px rgba(38, 124, 181, 0.56));
+        }
+        &.telegram:hover {
+            filter: drop-shadow(0px 0px 30px rgba(30, 177, 249, 0.58));
+        }
+        &.viber:hover {
+            filter: drop-shadow(0px 0px 30px rgba(127, 77, 160, 0.83));
+        }
+        &.whatsapp:hover {
+            filter: drop-shadow(0px 0px 30px rgba(44, 183, 66, 0.57));
+        }
+        img {
+            width: 30px;
+            object-fit: contain;
+        }
+    }
+    &__sub-title {
+        font-family: Rubik;
+        font-weight: 500;
+        font-size: 24px;
+        line-height: 28px;
+        letter-spacing: 0.1em;
+        color: #000000;
+    }
+    .socials {
+        margin-top: 15px;
+        margin-bottom: 40px;
+    }
+    .social {
+        margin-right: 15px;
+        transition: all 0.3s ease-in-out;
+        &.vk:hover {
+            filter: drop-shadow(0px 0px 30px rgba(76, 117, 163, 0.7));
+        }
+        &.fb:hover {
+            filter: drop-shadow(0px 0px 30px rgba(63, 101, 166, 0.79));
+        }
+        &.inst:hover {
+            filter: drop-shadow(0px 0px 30px rgba(174, 58, 141, 0.73));
+        }
+        img {
+            width: 30px;
+            object-fit: contain;
+        }
+    }
+}

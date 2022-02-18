@@ -1,0 +1,54 @@
+.portf {
+    padding-top: 120px;
+    padding-bottom: 40px;
+    .title {
+        font-family: Rubik;
+        font-weight: bold;
+        font-size: 36px;
+        text-transform: uppercase;
+        color: #282e73;
+        text-align: center;
+    }
+    .name {
+        display: flex;
+        h2 {
+            font-family: Rubik;
+            font-weight: bold;
+            font-size: 24px;
+            color: #f37c71;
+            margin-right: 10px;
+        }
+        .link {
+            font-family: Raleway;
+            font-weight: bold;
+            font-size: 24px;
+            color: #282e73;
+        }
+    }
+    .done {
+        .sub-title {
+            margin-top: 10px;
+            font-family: Rubik;
+            font-weight: 500;
+            font-size: 18px;
+            color: #000000;
+        }
+        &__point {
+            font-family: Raleway;
+            font-weight: normal;
+            font-size: 18px;
+            margin-bottom: 0;
+            color: #000000;
+        }
+    }
+    .preview {
+        margin-top: 30px;
+        display: flex;
+        img {
+            width: 33%;
+            height: max-content;
+            cursor: pointer;
+            margin: 0 5px;
+        }
+    }
+}

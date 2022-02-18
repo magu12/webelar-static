@@ -1,0 +1,58 @@
+.about {
+    position: relative;
+    margin-top: 80px;
+    padding: 80px 0;
+    background: #f8fafc;
+    .sub-title {
+        font-family: Rubik;
+        font-style: normal;
+        font-weight: bold;
+        font-size: 36px;
+        line-height: 43px;
+        text-transform: uppercase;
+        text-align: center;
+        color: #282e73;
+    }
+    &__content {
+        margin-top: 80px;
+        width: 100%;
+        position: relative;
+        display: flex;
+        justify-content: space-between;
+    }
+    &__text {
+        font-family: Raleway;
+        font-weight: normal;
+        font-size: 19px;
+        line-height: 111.9%;
+        color: #000;
+        width: 48%;
+        br {
+            margin-bottom: 10px;
+        }
+        span {
+            font-weight: bold;
+            font-family: Raleway;
+            font-size: 19px;
+            line-height: 111.9%;
+            color: #282e73;
+        }
+        p {
+            font-family: Raleway;
+            font-weight: 500;
+            font-size: 24px;
+            line-height: 111.9%;
+            color: #282e73;
+        }
+    }
+    &__top-img {
+        width: 48%;
+    }
+    &__bot-img {
+        position: absolute;
+        right: 30%;
+        bottom: -20px;
+        transform: translate(50%, -20%);
+        z-index: 2;
+    }
+}

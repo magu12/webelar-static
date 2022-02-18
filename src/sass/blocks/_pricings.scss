@@ -1,0 +1,78 @@
+.pricings {
+    position: relative;
+    margin: 120px 0;
+    .sub-title {
+        font-family: Rubik;
+        font-style: normal;
+        font-weight: bold;
+        font-size: 36px;
+        line-height: 43px;
+        text-transform: uppercase;
+        color: #282e73;
+        text-align: center;
+    }
+    &__items {
+        width: 100%;
+        margin-top: 50px;
+        display: flex;
+        justify-content: space-between;
+        flex-wrap: wrap;
+    }
+    &__price {
+        font-family: Rubik;
+        font-weight: 500;
+        font-size: 24px;
+        line-height: 28px;
+        text-align: center;
+        font-feature-settings: normal;
+        color: #282e73;
+        margin-top: 40px;
+    }
+    &__item {
+        background: rgba(#fff, 1);
+        border-radius: 5px;
+        border-bottom: 9px solid #f37c71;
+        width: 32%;
+        padding: 40px 0px;
+        position: relative;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        transition: all 0.3s ease-in-out;
+        filter: drop-shadow(0px 0px 50px rgba(128, 128, 128, 0.05));
+        margin-bottom: 25px;
+        &:hover {
+            filter: drop-shadow(5px 30px 40px rgba(128, 128, 128, 0.4));
+            transform: scale(1.05);
+        }
+    }
+    &__name {
+        font-family: Rubik;
+        font-weight: bold;
+        font-size: 24px;
+        line-height: 28px;
+        text-align: center;
+        text-transform: uppercase;
+        color: #282e73;
+    }
+    &__info {
+        width: 300px;
+        margin: 0 auto;
+        margin-top: 40px;
+        font-family: Raleway;
+        font-weight: 400;
+        font-size: 18px;
+        line-height: 21px;
+        color: #000000;
+        text-align: left;
+    }
+    .btn {
+        margin: 0 auto;
+        margin-top: 30px;
+        font-size: 16px;
+        cursor: pointer;
+        &::after {
+            content: none;
+        }
+    }
+}
